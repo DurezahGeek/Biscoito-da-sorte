@@ -1,22 +1,95 @@
 body {
-    background-color: #cffcff;
+  background-color: rgb(197, 192, 223);
 }
+
+.navbar {
+  background-color: rgb(121, 114, 156);
+  color: black;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  justify-content: center; 
+}
+
 .container{
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   justify-content: center;
-   align-items: center;
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ margin-top: 30px;
+ margin-bottom: 100px;
+}
+
+.container h4{
+  margin-top: 30px;
 }
 
 .img{
-    width: 250px;
-    height: 300px;
-    margin-top: 50px;
+  width: 250px;
+  margin-top: 50px;
+  margin-right: 50px
+}
+
+.img:hover {
+  transform: rotate(10deg); 
 }
 
 .textoFrase{
-    font-style: italic;
-    color: #dd7b22;
-    text-align: center;
+  font-style: italic;
+  color: #dd7b22;
 }
+
+.textoFrase-container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.rodapé {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(121, 114, 156);
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+/* Estilos CSS para dispositivos móveis */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  .container h1{
+    font-size: 20px;
+  }
+
+  .container h4{
+    font-size: 20px;
+  }
+
+  .img {
+    width: 100px; 
+    height: auto; 
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+
+  .img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .textoFrase-container {
+    position: relative;
+    margin-top: 10px;
+  }
+}
+
+
